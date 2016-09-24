@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Game v0.0.2</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../css/css.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand">My Game v0.0.2</a>
+
+
+
+            </div>
+            <!-- Top Navbar -->
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Management</a>
+                </li>
+                <li class="active">
+                    <a href="skills.html"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span></i> Skills</a>
+                </li>
+                <li><a href="#">Link</a></li>
+            </ul>
+
+            <!-- Side Navbar -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        
+                        <li>
+                            <a href="#lvlexp"><span class="temp"></span>Skills and Experience</a>
+                        </li>
+                        <li>
+                            <a href="#woodcutting"><span class=""></span>Woodcutting</a>
+                        </li>  
+                        <li>
+                            <a href="#mining"><span class=""></span>Mining</a>
+                        </li>  
+                     
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+<br>
+        <div id="page-wrapper">
+            <div class="row"> <!--Tab Header-->
+                <div class="col-lg-12">
+                    <h1 class="page-header" id="lvlexp">Skills</h1>
+                </div>
+            </div>
+
+            <div class="panel panel-default"><!--Levels/Exp-->
+                <div class="panel-heading">
+                    <h3 class="panel-title">Levels and Experience</h3>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="row"> 
+                        <div class="col-xs-6 col-md-3"> <!--Woodcutting-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Woodcutting</h4>
+                                    <hr>
+                                    <p  class="text-center" id="woodcutlevel">Level: 1</p>
+                                    <p  class="text-center">Experience: 50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Mining-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Mining</h4>
+                                    <hr>
+                                    <p  class="text-center" id="mininglevel">Level: 1</p>
+                                    <p  class="text-center">Experience: 50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Smithing-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Woodcutting</h4>
+                                    <hr>
+                                    <p  class="text-center" id="smithinglevel">Level: 1</p>
+                                    <p  class="text-center">Experience: 50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel panel-default" id="woodcutting"> <!--Woodcutting Tab-->
+                <div class="panel-heading">
+                    <h2 class="panel-title">Woodcutting</h2>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="row"> <!--Woodcutting Actions-->
+                        <div class="col-xs-6 col-md-3"> <!--Pine Tree-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Pine Tree</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Chop Pine Tree</a></p>
+                                    <p  class="text-center" id="pinelogcount">Pine Logs: 0</p>
+                                    <p  class="text-center">Exp/Action: 30</p>
+                                    <p  class="text-center">Level Req.: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Birch Tree-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Birch Tree</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Chop Birch Tree</a></p>
+                                    <p  class="text-center" id="birchlogcount">Birch Logs: 0</p>
+                                    <p  class="text-center">Exp/Action: 30</p>
+                                    <p  class="text-center">Level Req.: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Birch Tree-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Redwood Tree</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Chop Redwood Tree</a></p>
+                                    <p  class="text-center" id="redwoodlogcount">Redwood Logs: 0</p>
+                                    <p  class="text-center">Exp/Action: 70</p>
+                                    <p  class="text-center">Level Req.: 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="panel panel-default" id="mining"> <!--Mining Tab-->
+                <div class="panel-heading">
+                    <h2 class="panel-title">Mining</h2>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="row"> <!--Mining Actions-->
+                        <div class="col-xs-6 col-md-3"> <!--Tin Ore-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Tin Vein</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Mine Tin Vein</a></p>
+                                    <p  class="text-center" id="tinorecount">Tin Ore: 0</p>
+                                    <p  class="text-center">Exp/Action: 30</p>
+                                    <p  class="text-center">Level Req.: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Copper Ore-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Copper Vein</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Mine Copper Vein</a></p>
+                                    <p  class="text-center" id="copperorecount">Copper Ore: 0</p>
+                                    <p  class="text-center">Exp/Action: 30</p>
+                                    <p  class="text-center">Level Req.: 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3"> <!--Coal-->
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <h4 class="text-center">Redwood Tree</h4>
+                                    <hr>
+                                    <p class="text-center"><a class="btn btn-default" role="button">Chop Redwood Tree</a></p>
+                                    <p  class="text-center" id="redwoodlogcount">Redwood Logs: 0</p>
+                                    <p  class="text-center">Exp/Action: 70</p>
+                                    <p  class="text-center">Level Req.: 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <script src="../js/resources.js"></script>
+    <script src="../js/engine.js"></script>
+    <script src="../js/furnace.js"></script>
+    <script src="../js/data.js"></script>
+
+</body>
+
+</html>
